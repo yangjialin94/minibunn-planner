@@ -28,7 +28,8 @@ function Pricing() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Start Monthly
+            {/* Start Monthly */}
+            Coming soon
           </MotionLink>
         </div>
 
@@ -48,7 +49,8 @@ function Pricing() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Start Yearly
+            {/* Start Yearly */}
+            Coming soon
           </MotionLink>
         </div>
       </div>

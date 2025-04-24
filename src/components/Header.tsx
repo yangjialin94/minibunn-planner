@@ -45,7 +45,8 @@ function Header() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Sign in
+          {/* Sign in */}
+          Coming soon
         </MotionLink>
         <MotionLink
           href="https://app.minibunnplanner.com/auth/register"
@@ -53,7 +54,8 @@ function Header() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Get started
+          {/* Get started */}
+          Coming soon
         </MotionLink>
       </div>
     </header>
