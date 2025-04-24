@@ -1,7 +1,41 @@
 body {
-  @apply flex min-h-screen flex-col bg-neutral-100 p-4 text-neutral-800;
+  @apply flex min-h-full flex-col text-neutral-800;
+}
+
+/* Background image with adjustable opacity */
+body::before {
+  content: "";
+  @apply pointer-events-none fixed inset-0 -z-10 bg-[url('/bg-image-neutral.png')] bg-center bg-repeat opacity-20;
+}
+
+.main-container {
+  @apply flex flex-1 flex-col rounded-xl;
 }
 
 main {
-  @apply flex-1 overflow-hidden rounded-xl border border-neutral-800 p-4;
+  @apply flex-1 overflow-auto;
+}
+
+header {
+  @apply sticky top-4 z-10 mx-8 flex h-12 items-center justify-between rounded-full border-neutral-800 bg-white/60 px-4 backdrop-blur sm:mx-16 sm:h-16;
+}
+
+button {
+  @apply hover:cursor-pointer;
+}
+
+h1 {
+  @apply max-w-xl text-3xl font-bold sm:max-w-4xl sm:text-4xl md:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply max-w-xl text-lg sm:max-w-4xl sm:text-xl lg:text-2xl;
+}
+
+h3 {
+  @apply max-w-xl text-lg sm:max-w-4xl lg:text-xl;
+}
+
+.hero {
+  @apply flex flex-col items-center justify-center gap-12 px-4 py-36 sm:px-16;
 }

@@ -3,6 +3,8 @@ import "@/style/globals.scss";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 
+import Header from "@/components/Header";
+
 export const metadata: Metadata = {
   title: "Minibunn Planner",
   description:
@@ -16,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <div className="main-container">
+          <Header />
+          <main>{children}</main>
+        </div>
         <Analytics />
       </body>
     </html>
