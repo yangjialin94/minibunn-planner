@@ -77,7 +77,7 @@ export default function Carousel() {
   };
 
   return (
-    <section className="relative mx-auto max-w-screen-xl px-4 py-12">
+    <section className="relative mx-auto max-w-screen-xl py-12">
       {/* Tabs */}
       <div className="mb-8 flex w-full justify-center gap-6 overflow-x-auto text-base font-medium sm:text-lg">
         {slides.map((item, idx) => (

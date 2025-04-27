@@ -9,9 +9,14 @@ const MotionLink = motion(Link);
 
 function Header() {
   return (
-    <header>
+    <header className="overflow-hidden">
       {/* left side */}
-      <div className="flex items-center gap-4">
+      <MotionLink
+        href="/"
+        className="flex items-center gap-4"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
         {/* Desktop */}
         <div className="relative hidden h-140 w-[140px] sm:block">
           <Image
@@ -35,7 +40,7 @@ function Header() {
             priority
           />
         </div>
-      </div>
+      </MotionLink>
 
       {/* right side */}
       <div className="flex items-center sm:gap-2 md:gap-4">

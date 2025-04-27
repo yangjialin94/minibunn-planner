@@ -9,11 +9,11 @@ body::before {
 }
 
 .main-container {
-  @apply flex flex-1 flex-col rounded-xl;
+  @apply flex flex-1 flex-col rounded-xl pb-12;
 }
 
 main {
-  @apply flex-1 overflow-auto;
+  @apply flex-1 overflow-auto px-8 py-12;
 }
 
 header {
