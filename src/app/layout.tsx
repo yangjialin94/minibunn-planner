@@ -2,9 +2,11 @@ import "@/style/globals.scss";
 
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
+import React, { Suspense } from "react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import TermlyCMP from "@/components/TermlyCMP";
 
 export const metadata: Metadata = {
   title: "Minibunn Planner",
@@ -19,6 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Suspense>
+          <TermlyCMP
+            websiteUUID={process.env.NEXT_PUBLIC_WEBSITE_UUID!}
+            autoBlock={false}
+            masterConsentsOrigin=""
+          />
+        </Suspense>
         <div className="main-container">
           {/* Header Section */}
           <Header />
