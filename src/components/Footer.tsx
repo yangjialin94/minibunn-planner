@@ -16,12 +16,12 @@ function Footer() {
 
       {/* Nav links */}
       <nav className="mb-6 flex flex-wrap justify-center gap-6 font-medium">
-        <Link
+        {/* <Link
           href="/about"
           className="border-b border-transparent hover:border-neutral-500"
         >
           About
-        </Link>
+        </Link> */}
         <Link
           href="mailto:contact@minibunnplanner.com"
           className="border-b border-transparent hover:border-neutral-500"
@@ -46,11 +46,14 @@ function Footer() {
         >
           Terms
         </Link>
+        <Link href="#" className="termly-display-preferences">
+          Manage Consent
+        </Link>
       </nav>
 
       {/* Legal */}
       <p className="mb-1">© 2025 Jialin Yang. All rights reserved.</p>
-      <p>Minibunn Planner is a trademark of Jialin Yang.</p>
+      <p>Minibunn Planner™ by Jialin Yang.</p>
     </footer>
   );
 }
