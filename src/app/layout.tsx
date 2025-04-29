@@ -6,13 +6,59 @@ import React, { Suspense } from "react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import StructuredData from "@/components/StructuredData";
 import TermlyCMP from "@/components/TermlyCMP";
 
 export const metadata: Metadata = {
-  title: "Minibunn Planner",
+  title: "Minibunn Planner — Digital Planner That Feels Like Paper",
   description:
-    "A minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+    "Minibunn Planner is a minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+  keywords: [
+    "digital planner",
+    "minimalist planner",
+    "productivity app",
+    "paper-like planner",
+  ],
+  metadataBase: new URL("https://www.minibunnplanner.com"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    title: "Minibunn Planner",
+    description:
+      "A minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+    siteName: "Minibunn Planner",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Minibunn Planner preview screenshot",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Minibunn Planner",
+    description:
+      "A minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+    creator: "@JialinYang",
+    images: ["/twitter-card.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-32x32.png",
+  },
+  manifest: "/site.webmanifest",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,6 +66,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <StructuredData />
+      </head>
       <body>
         <Suspense>
           <TermlyCMP
