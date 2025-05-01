@@ -211,7 +211,7 @@ export default function Carousel() {
                   alt={activeItem.title}
                   width={800}
                   height={400}
-                  className="h-full w-full object-contain"
+                  className="h-full w-full rounded-xl object-contain"
                   priority
                 />
               </div>
