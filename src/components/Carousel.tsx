@@ -1,10 +1,10 @@
 "use client";
 
 import clsx from "clsx";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X as XIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface CarouselItem {
   key: string;
@@ -59,6 +59,7 @@ export default function Carousel() {
   const [[activeIndex, direction], setIndex] = useState<[number, number]>([
     0, 0,
   ]);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const activeItem = slides[activeIndex];
   const total = slides.length;
 
@@ -76,6 +77,24 @@ export default function Carousel() {
       opacity: 0,
     }),
   } as const;
+
+  // Hide the scrollbar when the lightbox is open
+  useEffect(() => {
+    // save the existing overflow so we can restore it later
+    const original =
+      typeof document !== "undefined" ? document.body.style.overflow : "";
+
+    if (isLightboxOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = original;
+    }
+
+    // cleanup on unmount or when isLightboxOpen changes
+    return () => {
+      document.body.style.overflow = original;
+    };
+  }, [isLightboxOpen]);
 
   // Handle the next and previous actions
   const handleSlide = (targetIdx: number) => {
@@ -139,7 +158,10 @@ export default function Carousel() {
             </div>
 
             {/* Illustration */}
-            <div className="relative mx-auto h-48 w-full max-w-md sm:h-52 lg:h-60">
+            <div
+              className="relative mx-auto h-48 w-full max-w-md hover:cursor-pointer sm:h-52 lg:h-60"
+              onClick={() => setIsLightboxOpen(true)}
+            >
               <Image
                 src={activeItem.imageUrl}
                 alt={activeItem.title}
@@ -164,6 +186,38 @@ export default function Carousel() {
             <ChevronRight />
           </button>
         </div>
+
+        {/* Lightbox overlay */}
+        <AnimatePresence>
+          {isLightboxOpen && (
+            <motion.div
+              key="lightbox"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-10 flex h-full w-full justify-center bg-neutral-800 p-4"
+            >
+              {/* Close button */}
+              <button
+                onClick={() => setIsLightboxOpen(false)}
+                className="absolute top-4 right-4 rounded-full border border-neutral-800 bg-neutral-100 p-1 hover:bg-neutral-200 lg:p-2"
+              >
+                <XIcon />
+              </button>
+
+              <div className="p-4 lg:p-12">
+                <Image
+                  src={activeItem.imageUrl}
+                  alt={activeItem.title}
+                  width={800}
+                  height={400}
+                  className="h-full w-full object-contain"
+                  priority
+                />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/*  Navigation dots */}
