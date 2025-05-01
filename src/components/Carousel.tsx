@@ -45,6 +45,13 @@ const slides: CarouselItem[] = [
       "Save quick ideas, reminders, and links as timestamped cards. Scroll, search, and edit them later when inspiration strikes again.",
     imageUrl: "/screens/notes-050125.png",
   },
+  {
+    key: "user",
+    title: "User",
+    description:
+      "Manage your account in one place: view your current plan and price, check your next billing date, update your password, access support, or cancel your subscription with one click.",
+    imageUrl: "/screens/user-050125.png",
+  },
 ];
 
 export default function Carousel() {
