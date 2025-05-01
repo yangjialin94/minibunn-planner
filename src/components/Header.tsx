@@ -44,8 +44,7 @@ function Header() {
 
       {/* right side */}
       <div className="flex items-center sm:gap-2 md:gap-4">
-        <p className="text-xl font-semibold">Launching May 2025!</p>
-        {/* <MotionLink
+        <MotionLink
           href="https://app.minibunnplanner.com/"
           className="mr-2 rounded-full border border-transparent px-3 py-1 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100 sm:mr-4 sm:px-4 sm:py-2 sm:text-xl"
           whileHover={{ scale: 1.1 }}
@@ -60,7 +59,7 @@ function Header() {
           whileTap={{ scale: 0.9 }}
         >
           Get started
-        </MotionLink> */}
+        </MotionLink>
       </div>
     </header>
   );

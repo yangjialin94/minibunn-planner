@@ -1,7 +1,7 @@
-// import { motion } from "motion/react";
-// import Link from "next/link";
+import { motion } from "motion/react";
+import Link from "next/link";
 
-// const MotionLink = motion(Link);
+const MotionLink = motion(Link);
 
 function Pricing() {
   return (
@@ -22,14 +22,14 @@ function Pricing() {
           <p className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
             $3.99
           </p>
-          {/* <MotionLink
+          <MotionLink
             href="https://app.minibunnplanner.com/auth/register"
             className="w-full rounded-full bg-neutral-800 py-3 text-neutral-100 hover:bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Start Monthly
-          </MotionLink> */}
+          </MotionLink>
         </div>
 
         {/* yearly */}
@@ -42,14 +42,14 @@ function Pricing() {
             $29.99
           </p>
           <p className="mb-6 text-sm text-neutral-500">($2.49 / month)</p>
-          {/* <MotionLink
+          <MotionLink
             href="https://app.minibunnplanner.com/auth/register"
             className="w-full rounded-full bg-neutral-800 py-3 text-neutral-100 hover:bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Start Yearly
-          </MotionLink> */}
+          </MotionLink>
         </div>
       </div>
     </section>
