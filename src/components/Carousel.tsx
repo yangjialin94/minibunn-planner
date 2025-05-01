@@ -22,28 +22,28 @@ const slides: CarouselItem[] = [
     title: "Calendar",
     description:
       "View your entire month at a glance. Each date shows ✓/total tasks so you can spot streaks, misses, and over-scheduled days instantly.",
-    imageUrl: "/screens/calendar.png",
+    imageUrl: "/screens/calendar-050125.png",
   },
   {
     key: "tasks",
     title: "Today",
     description:
       "Laser-focus on the now. Filter by active or completed, see a live progress ratio, and reorder tasks with simple drag-and-drop.",
-    imageUrl: "/screens/tasks.png",
+    imageUrl: "/screens/tasks-050125.png",
   },
   {
     key: "journal",
     title: "Journal",
     description:
       "Capture reflections, gratitude, and lessons learned in a clean, lined editor, perfect for daily writing without distractions.",
-    imageUrl: "/screens/journal.png",
+    imageUrl: "/screens/journal-050125.png",
   },
   {
     key: "notes",
     title: "Notes",
     description:
       "Save quick ideas, reminders, and links as timestamped cards. Scroll, search, and edit them later when inspiration strikes again.",
-    imageUrl: "/screens/notes.png",
+    imageUrl: "/screens/notes-050125.png",
   },
 ];
 
@@ -138,7 +138,7 @@ export default function Carousel() {
                 alt={activeItem.title}
                 fill
                 sizes="(min-width: 640px) 320px, 100vw"
-                className="rounded-xl object-fill"
+                className="rounded-md object-fill"
                 priority
               />
             </div>
