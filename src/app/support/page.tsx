@@ -41,10 +41,10 @@ function SupportPage() {
     <div className="text-center">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Support</h1>
+        <h1>Need Help? We&apos;re Here for You</h1>
         <h2>
-          Need help? Choose a category below to email us directly. We&apos;ll
-          get back to you as soon as possible.
+          Choose a category below to email our team directly — we&apos;ll get
+          back to you as soon as possible.
         </h2>
       </section>
 

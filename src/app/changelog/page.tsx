@@ -8,7 +8,9 @@ export default function ChangelogPage() {
       {/* Hero Section */}
       <section className="hero">
         <h1>What&apos;s New in Minibunn Planner?</h1>
-        <h2>Changelog</h2>
+        <h2>
+          See the latest updates, improvements, and new features we’ve added.
+        </h2>
       </section>
 
       {/* Changelog Section */}

@@ -7,10 +7,10 @@ function GuidePage() {
     <div className="text-center">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Guide</h1>
+        <h1>How to Use Minibunn Planner</h1>
         <h2>
-          Learn how to use each feature in Minibunn Planner — with clear
-          explanations and step-by-step video demos.
+          Explore step-by-step guides and video tutorials to get the most out of
+          every feature.
         </h2>
       </section>
 
