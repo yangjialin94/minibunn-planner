@@ -1,7 +1,7 @@
 "use client";
 
-import Carousel from "@/components/Carousel";
-import Pricing from "@/components/Pricing";
+import Carousel from "@/components/home/Carousel";
+import Pricing from "@/components/home/Pricing";
 
 /**
  * Home Page

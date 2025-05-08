@@ -34,7 +34,6 @@ function Terms() {
 
       {/* Policy Content */}
       <div
-        className="mx-auto max-w-4xl"
         dangerouslySetInnerHTML={{
           __html: `
             <div data-custom-class="body">

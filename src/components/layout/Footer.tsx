@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="mx-auto w-full max-w-screen-xl text-center text-sm text-neutral-500">
+    <footer className="mx-auto w-full text-center text-sm text-neutral-500">
       {/* Logo */}
       <div className="mx-auto mb-6 w-10">
         <Image

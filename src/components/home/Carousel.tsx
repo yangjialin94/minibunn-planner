@@ -103,7 +103,7 @@ export default function Carousel() {
   };
 
   return (
-    <section className="relative mx-auto max-w-screen-xl py-12">
+    <section className="relative mx-auto py-12">
       {/* Tabs */}
       <div className="mb-8 flex w-full justify-center gap-6 overflow-x-auto text-base font-medium sm:text-lg">
         {slides.map((item, idx) => (
@@ -159,7 +159,7 @@ export default function Carousel() {
 
             {/* Illustration */}
             <div
-              className="relative mx-auto h-48 w-full max-w-md hover:cursor-pointer sm:h-52 lg:h-60"
+              className="relative mx-auto h-48 w-full hover:cursor-pointer sm:h-52 lg:h-60"
               onClick={() => setIsLightboxOpen(true)}
             >
               <Image

@@ -4,10 +4,10 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import React, { Suspense } from "react";
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import StructuredData from "@/components/StructuredData";
-import TermlyCMP from "@/components/TermlyCMP";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import StructuredData from "@/components/layout/StructuredData";
+import TermlyCMP from "@/components/layout/TermlyCMP";
 
 export const metadata: Metadata = {
   title: "Minibunn Planner — Digital Planner That Feels Like Paper",
