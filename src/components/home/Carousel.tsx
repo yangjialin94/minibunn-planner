@@ -49,7 +49,7 @@ const slides: CarouselItem[] = [
     key: "user",
     title: "User",
     description:
-      "Manage your account in one place: view your current plan and price, check your next billing date, update your password, access support, or cancel your subscription with one click.",
+      "Manage your account in one place—check your plan and billing, update your password, access support, or cancel your subscription anytime.",
     imageUrl: "/screens/user-050125.png",
   },
 ];

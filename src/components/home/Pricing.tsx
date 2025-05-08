@@ -7,10 +7,10 @@ function Pricing() {
   return (
     <section className="mx-auto py-24 text-center sm:py-36">
       {/* heading */}
-      <h2 className="mb-4 font-bold">
+      <p className="mb-4 text-xl font-bold md:text-2xl">
         Less than a coffee ☕, more focus every day
-      </h2>
-      <p className="mb-12 sm:text-lg">
+      </p>
+      <p className="mb-12 text-neutral-500 md:text-lg">
         Try every feature free for 7 days—cancel anytime.
       </p>
 
