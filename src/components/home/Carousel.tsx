@@ -122,7 +122,7 @@ export default function Carousel() {
       </div>
 
       {/* Carousel card */}
-      <div className="relative flex w-full items-center overflow-hidden rounded-xl bg-white p-8 ring-6 ring-neutral-100">
+      <div className="relative flex w-full items-center overflow-hidden rounded-xl border-6 border-neutral-100 bg-white p-8">
         {/* Previous button */}
         <div>
           <button
