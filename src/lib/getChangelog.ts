@@ -9,6 +9,7 @@ export interface ChangelogItem {
   title: string;
   date: string;
   type: string;
+  summary?: string;
   content: string;
 }
 
@@ -27,6 +28,7 @@ export function getAllChangelogItems(): ChangelogItem[] {
         title: data.title,
         date: data.date,
         type: data.type,
+        summary: data.summary,
         content,
       };
     })

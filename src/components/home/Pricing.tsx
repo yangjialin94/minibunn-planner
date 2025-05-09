@@ -5,7 +5,7 @@ const MotionLink = motion(Link);
 
 function Pricing() {
   return (
-    <section className="mx-auto py-24 text-center sm:py-36">
+    <section className="mx-auto text-center">
       {/* heading */}
       <p className="mb-4 text-xl font-bold md:text-2xl">
         Less than a coffee ☕, more focus every day

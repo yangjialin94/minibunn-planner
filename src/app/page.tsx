@@ -8,7 +8,7 @@ import Pricing from "@/components/home/Pricing";
  */
 function HomePage() {
   return (
-    <div className="text-center">
+    <>
       {/* Hero Section */}
       <section className="hero">
         <h1>A Digital Planner That Feels Like Paper</h1>
@@ -23,7 +23,7 @@ function HomePage() {
 
       {/* Pricing Section */}
       <Pricing />
-    </div>
+    </>
   );
 }
 

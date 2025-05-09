@@ -4,7 +4,7 @@ import React from "react";
 
 function GuidePage() {
   return (
-    <div className="text-center">
+    <>
       {/* Hero Section */}
       <section className="hero">
         <h1>How to Use Minibunn Planner</h1>
@@ -14,13 +14,13 @@ function GuidePage() {
         </h2>
       </section>
 
-      <div className="pt-12 pb-24 sm:pb-36">
+      <section className="text-center">
         <p className="text-neutral-500 italic">
           This page is currently under construction. New videos and instructions
           are coming soon!
         </p>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

@@ -1,3 +1,6 @@
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 import { ChangelogItem, getAllChangelogItems } from "@/lib/getChangelog";
 
 export default function ChangelogPage() {
@@ -9,17 +12,18 @@ export default function ChangelogPage() {
       <section className="hero">
         <h1>What&apos;s New in Minibunn Planner?</h1>
         <h2>
-          See the latest updates, improvements, and new features we’ve added.
+          See the latest updates, improvements, and new features we&apos;ve
+          added.
         </h2>
       </section>
 
       {/* Changelog Section */}
-      <div className="relative flex flex-col pt-12 pb-24 sm:pb-36 md:pl-36">
-        <div className="flex flex-col gap-8 border-neutral-200 md:gap-12 md:border-l-2">
+      <section className="relative flex flex-col px-2 py-4 backdrop-blur-md md:pl-36">
+        <div className="flex flex-col gap-2 border-neutral-200 sm:gap-6 md:gap-12 md:border-l-2">
           {changes.map((item) => (
             <div
               key={item.slug}
-              className="relative border-b-2 border-neutral-200 pb-8 md:border-none md:pb-0 md:pl-8"
+              className="relative border-b-2 border-neutral-200 pb-4 sm:pb-8 md:border-none md:pb-0 md:pl-8"
             >
               {/* Date */}
               <p className="absolute top-1.5 -left-32 hidden w-24 text-right text-sm font-semibold text-neutral-500 uppercase md:flex">
@@ -39,7 +43,32 @@ export default function ChangelogPage() {
               <h3 className="font-semibold">{item.title}</h3>
 
               {/* Description */}
-              <p className="mt-2 text-neutral-500">{item.content}</p>
+              <div>
+                {/* Small screen summary */}
+                <p className="block text-neutral-500 md:hidden">
+                  {item.summary || item.content}
+                </p>
+
+                {/* Full content on larger screens */}
+                <div className="hidden md:block">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ ...props }) => (
+                        <p className="mt-2 text-neutral-500" {...props} />
+                      ),
+                      li: ({ ...props }) => (
+                        <li className="ml-6 list-disc" {...props} />
+                      ),
+                      ul: ({ ...props }) => (
+                        <ul className="mb-2 ml-4 list-disc" {...props} />
+                      ),
+                    }}
+                  >
+                    {item.content}
+                  </ReactMarkdown>
+                </div>
+              </div>
 
               {/* Tags */}
               <p className="mt-3 flex w-fit rounded-full bg-neutral-200 px-3 py-1 text-sm font-medium text-neutral-500">
@@ -48,7 +77,7 @@ export default function ChangelogPage() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </>
   );
 }

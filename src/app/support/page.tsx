@@ -38,7 +38,7 @@ function SupportPage() {
   ];
 
   return (
-    <div className="text-center">
+    <>
       {/* Hero Section */}
       <section className="hero">
         <h1>Need Help? We&apos;re Here for You</h1>
@@ -49,7 +49,7 @@ function SupportPage() {
       </section>
 
       {/* Support Items Section */}
-      <div className="space-y-4 pt-12 pb-24 sm:pb-36">
+      <section className="space-y-4 text-center">
         {supportItems.map((item, index) => (
           <Link
             key={index}
@@ -62,8 +62,8 @@ function SupportPage() {
             <p className="text-neutral-500">{item.description}</p>
           </Link>
         ))}
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

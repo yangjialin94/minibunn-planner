@@ -8,18 +8,24 @@ body::before {
   @apply pointer-events-none fixed inset-0 -z-10 bg-[url('/bg-image-neutral.png')] bg-center bg-repeat opacity-20;
 }
 
+/* Layout */
 .main-container {
   @apply mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 pb-8;
-}
-
-main {
-  @apply flex-1 overflow-auto p-8;
 }
 
 header {
   @apply sticky top-0 z-10 mx-0 flex h-20 items-center justify-between bg-[#fffefe] px-4 font-medium;
 }
 
+main {
+  @apply mb-20 flex-1 space-y-20 overflow-auto sm:mb-28 sm:space-y-28 md:mb-36 md:space-y-36;
+}
+
+.hero {
+  @apply flex flex-col items-center justify-center gap-4 px-4 pt-12 text-center sm:gap-8 sm:pt-24 md:gap-12 md:pt-36;
+}
+
+/* Elements */
 button {
   @apply hover:cursor-pointer;
 }
@@ -34,8 +40,4 @@ h2 {
 
 h3 {
   @apply text-lg lg:text-xl;
-}
-
-.hero {
-  @apply flex flex-col items-center justify-center gap-12 px-4 py-24 text-center sm:px-16 sm:py-36;
 }
