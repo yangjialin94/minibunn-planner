@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 function Pricing() {
   return (
@@ -17,7 +17,7 @@ function Pricing() {
       {/* plans */}
       <div className="grid gap-8 sm:grid-cols-2">
         {/* monthly */}
-        <div className="flex flex-col items-center rounded-3xl border-2 border-neutral-200 bg-white p-10">
+        <div className="flex flex-col items-center rounded-xl border-2 border-neutral-200 bg-white p-10">
           <h3 className="mb-1 font-semibold">Monthly</h3>
           <p className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
             $3.99
@@ -33,7 +33,7 @@ function Pricing() {
         </div>
 
         {/* yearly */}
-        <div className="relative flex flex-col items-center rounded-3xl border-2 border-neutral-800 bg-white p-10">
+        <div className="relative flex flex-col items-center rounded-xl border-2 border-neutral-800 bg-white p-10">
           <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-neutral-800 px-3 py-1 text-xs font-medium tracking-wide text-neutral-100 uppercase">
             Save 37%
           </span>

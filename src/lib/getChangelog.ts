@@ -2,8 +2,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-const changelogDir = path.join(process.cwd(), "src/content/changelog");
-
 export interface ChangelogItem {
   slug: string;
   title: string;
@@ -12,6 +10,8 @@ export interface ChangelogItem {
   summary?: string;
   content: string;
 }
+
+const changelogDir = path.join(process.cwd(), "src/content/changelog");
 
 /**
  * Get the changelog item by slug

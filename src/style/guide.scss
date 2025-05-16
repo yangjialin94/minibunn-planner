@@ -1,0 +1,49 @@
+.guide-content {
+  h1 {
+    @apply text-3xl font-bold text-neutral-800;
+  }
+
+  h2 {
+    @apply mt-6 text-2xl font-semibold text-neutral-800 md:mt-10;
+  }
+
+  h3 {
+    @apply mt-4 text-xl font-medium text-neutral-800 md:mt-8;
+  }
+
+  p {
+    @apply mt-2 text-base leading-relaxed text-neutral-500 md:mt-4;
+  }
+
+  ul {
+    @apply mt-2 list-disc pl-6 text-neutral-500 md:mt-4;
+  }
+
+  ol {
+    @apply mt-2 pl-6 text-neutral-500 md:mt-4;
+
+    &.decimal {
+      @apply list-decimal;
+    }
+
+    &.alpha {
+      list-style-type: upper-alpha;
+    }
+
+    &.roman {
+      list-style-type: upper-roman;
+    }
+  }
+
+  li {
+    @apply pl-2 marker:text-neutral-500;
+  }
+
+  a {
+    @apply text-blue-600 underline hover:text-blue-800;
+  }
+
+  img {
+    @apply rounded-xl border-2 border-neutral-100 shadow-md;
+  }
+}

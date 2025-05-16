@@ -7,7 +7,7 @@ import React from "react";
 
 import HeaderMenu from "./HeaderMenu";
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 function Header() {
   return (
@@ -22,12 +22,11 @@ function Header() {
           whileTap={{ scale: 0.9 }}
         >
           {/* Desktop */}
-          <div className="relative h-100 w-[100px]">
+          <div className="relative h-20 w-[100px]">
             <Image
               src="/minibunn-planner-logo.svg"
               alt="Minibunn Planner logo"
               fill
-              sizes="400px"
               className="object-contain"
               priority
             />
@@ -40,50 +39,60 @@ function Header() {
         {/* Desktop */}
         <div className="hidden items-center gap-2 text-lg md:flex lg:gap-4">
           {/* Guide */}
-          <Link
-            href="/guide"
-            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+          <MotionLink
+            href="/guide/home/header-sidebar"
+            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Guide
-          </Link>
+          </MotionLink>
 
           {/* Changelog */}
-          <Link
+          <MotionLink
             href="/changelog"
-            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Changelog
-          </Link>
+          </MotionLink>
 
           {/* Support */}
-          <Link
+          <MotionLink
             href="/support"
-            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Support
-          </Link>
+          </MotionLink>
 
           <p className="font-bold">|</p>
 
           {/* Sign in */}
-          <Link
+          <MotionLink
             href="https://app.minibunnplanner.com/"
-            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+            className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Sign in
-          </Link>
+          </MotionLink>
 
           {/* Sign up */}
-          <Link
+          <MotionLink
             href="https://app.minibunnplanner.com/auth/register"
             className="rounded-full bg-neutral-800 px-4 py-2 text-neutral-100 hover:bg-neutral-700"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             Get started
-          </Link>
+          </MotionLink>
         </div>
 
         {/* Mobile */}
-        <div className="flex items-center md:hidden">
+        <div className="flex md:hidden">
           <HeaderMenu />
         </div>
       </div>

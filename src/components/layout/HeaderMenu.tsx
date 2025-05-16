@@ -30,23 +30,18 @@ function HeaderMenu() {
 
   return (
     <>
-      <div>
-        <Button
-          onClick={open}
-          className={clsx(
-            "peer rounded-full border p-2 hover:cursor-pointer hover:border-neutral-800 hover:bg-neutral-100",
-            {
-              "border-neutral-800 bg-neutral-100": isOpen,
-              "border-transparent": !isOpen,
-            },
-          )}
-        >
-          <Menu />
-        </Button>
-        <div className="pointer-events-none absolute -top-8 -right-2 z-10 rounded bg-neutral-400 px-2 py-1 text-sm whitespace-nowrap opacity-0 transition-opacity delay-300 duration-150 peer-hover:opacity-100">
-          Menu
-        </div>
-      </div>
+      <Button
+        onClick={open}
+        className={clsx(
+          "peer rounded-full border p-2 hover:cursor-pointer hover:border-neutral-800 hover:bg-neutral-200",
+          {
+            "border-neutral-800 bg-neutral-100": isOpen,
+            "border-transparent": !isOpen,
+          },
+        )}
+      >
+        <Menu />
+      </Button>
 
       <Dialog open={isOpen} as="div" className="relative z-10" onClose={close}>
         <div className="fixed inset-0 w-screen overflow-y-auto backdrop-blur-md">
@@ -55,21 +50,21 @@ function HeaderMenu() {
               transition
               className="w-full max-w-sm rounded-xl border-2 bg-[#fffefe] p-4"
             >
-              <div className="flex w-full flex-col justify-between gap-4 p-2">
+              <div className="relative flex w-full flex-col justify-between gap-4 p-2">
                 {/* Close button */}
-                <div className="flex w-full justify-end">
+                <div className="absolute -top-2 -right-2">
                   <button
                     onClick={close}
-                    className="rounded-full border border-transparent p-2 hover:border-neutral-800 hover:bg-neutral-100"
+                    className="rounded-full border border-transparent p-1 hover:border-neutral-800 hover:bg-neutral-200"
                   >
-                    <X />
+                    <X size={20} />
                   </button>
                 </div>
 
                 {/* Menu items */}
                 <button
-                  onClick={() => handleNavigation("/guide")}
-                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+                  onClick={() => handleNavigation("/guide/home/header-sidebar")}
+                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
                 >
                   Guide
                 </button>
@@ -77,7 +72,7 @@ function HeaderMenu() {
                 {/* Changelog */}
                 <button
                   onClick={() => handleNavigation("/changelog")}
-                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
                 >
                   Changelog
                 </button>
@@ -85,7 +80,7 @@ function HeaderMenu() {
                 {/* Support */}
                 <button
                   onClick={() => handleNavigation("/support")}
-                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
                 >
                   Support
                 </button>
@@ -98,7 +93,7 @@ function HeaderMenu() {
                   onClick={() =>
                     handleNavigation("https://app.minibunnplanner.com/")
                   }
-                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-100"
+                  className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
                 >
                   Sign in
                 </button>

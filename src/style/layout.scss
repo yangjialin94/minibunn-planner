@@ -18,7 +18,7 @@ header {
 }
 
 main {
-  @apply mb-20 flex-1 space-y-20 overflow-auto sm:mb-28 sm:space-y-28 md:mb-36 md:space-y-36;
+  @apply mb-20 flex-1 space-y-20 sm:mb-28 sm:space-y-28 md:mb-36 md:space-y-36;
 }
 
 .hero {

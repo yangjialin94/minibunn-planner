@@ -54,7 +54,7 @@ function SupportPage() {
           <Link
             key={index}
             href={`mailto:contact@minibunnplanner.com?subject=${encodeURIComponent(item.subject)}`}
-            className="block rounded-xl border-6 border-neutral-100 bg-white p-4 transition hover:border-neutral-200 hover:bg-neutral-100"
+            className="block rounded-xl border-6 border-neutral-100 bg-white p-4 transition hover:border-neutral-200 hover:bg-neutral-200"
           >
             <p className="mb-2 text-xl font-semibold text-neutral-800">
               {item.title}
