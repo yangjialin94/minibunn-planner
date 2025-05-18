@@ -11,9 +11,10 @@ import StructuredData from "@/components/layout/StructuredData";
 import TermlyCMP from "@/components/layout/TermlyCMP";
 
 export const metadata: Metadata = {
-  title: "Minibunn Planner — Digital Planner That Feels Like Paper",
+  title:
+    "Minibunn Planner —  A Minimalist Planner Built for Clarity, Not Clutter",
   description:
-    "Minibunn Planner is a minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+    "Minibunn is a minimalist digital planner that helps you plan clearly, stay focused, and avoid the overwhelm of bloated productivity apps.",
   keywords: [
     "digital planner",
     "minimalist planner",
@@ -33,11 +34,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     title: "Minibunn Planner",
     description:
-      "A minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
+      "Minibunn is a minimalist digital planner that helps you plan clearly, stay focused, and avoid the overwhelm of bloated productivity apps.",
     siteName: "Minibunn Planner",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.minibunnplanner.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Minibunn Planner preview screenshot",
@@ -48,14 +49,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Minibunn Planner",
     description:
-      "A minimalist digital planner that feels like paper, thoughtfully designed by Jialin Yang.",
-    creator: "@JialinYang",
-    images: ["/twitter-card.png"],
+      "Minibunn is a minimalist digital planner that helps you plan clearly, stay focused, and avoid the overwhelm of bloated productivity apps.",
+    creator: "@minibunnplanner",
+    images: ["https://www.minibunnplanner.com/twitter-card.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-    shortcut: "/favicon-32x32.png",
+    icon: "https://www.minibunnplanner.com/favicon.ico",
+    apple: "https://www.minibunnplanner.com/apple-touch-icon.png",
+    shortcut: "https://www.minibunnplanner.com/favicon-32x32.png",
   },
   manifest: "/site.webmanifest",
 };
