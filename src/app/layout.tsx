@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import React, { Suspense } from "react";
 
+import StickyCTA from "@/components/home/StickyCTA";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import StructuredData from "@/components/layout/StructuredData";
@@ -86,6 +87,8 @@ export default function RootLayout({
 
           {/* Footer Section */}
           <Footer />
+
+          <StickyCTA />
         </div>
         <Analytics />
       </body>

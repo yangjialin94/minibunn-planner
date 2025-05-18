@@ -104,6 +104,10 @@ export default function Carousel() {
 
   return (
     <section className="relative mx-auto">
+      <p className="mb-12 text-center text-2xl font-bold sm:text-3xl">
+        What you get with Minibunn
+      </p>
+
       {/* Tabs */}
       <div className="mb-8 flex w-full justify-center gap-6 overflow-x-auto text-base font-medium sm:text-lg">
         {slides.map((item, idx) => (

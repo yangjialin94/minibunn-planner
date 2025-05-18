@@ -11,10 +11,9 @@ function HomePage() {
     <>
       {/* Hero Section */}
       <section className="hero">
-        <h1>A Digital Planner That Feels Like Paper</h1>
+        <h1>Tired of bloated productivity apps? Try calm, focused planning.</h1>
         <h2>
-          Thoughtfully designed for people who love the simplicity of paper but
-          want the superpowers of a web app.
+          Minibunn is a minimalist planner built for clarity, not clutter.
         </h2>
       </section>
 
