@@ -37,7 +37,7 @@ function Sidebar({ sections }: SidebarProps) {
     home: 1,
     day: 2,
     notes: 3,
-    support: 4,
+    user: 4,
   };
 
   // Handle group toggle
