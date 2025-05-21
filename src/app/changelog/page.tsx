@@ -3,6 +3,13 @@ import remarkGfm from "remark-gfm";
 
 import { ChangelogItem, getAllChangelogItems } from "@/lib/getChangelog";
 
+const tagStyles: Record<string, string> = {
+  New: "bg-green-200 text-green-800",
+  Improvement: "bg-blue-200 text-blue-800",
+  Update: "bg-yellow-200 text-yellow-800",
+  Launch: "bg-purple-200 text-purple-800",
+};
+
 export default function ChangelogPage() {
   const changes: ChangelogItem[] = getAllChangelogItems();
 
@@ -71,9 +78,20 @@ export default function ChangelogPage() {
               </div>
 
               {/* Tags */}
-              <p className="mt-3 flex w-fit rounded-full bg-neutral-200 px-3 py-1 text-sm font-medium text-neutral-500">
-                {item.type}
-              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {(Array.isArray(item.type) ? item.type : [item.type]).map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className={`rounded-full px-3 py-1 text-sm font-medium ${
+                        tagStyles[tag] || "bg-neutral-200 text-neutral-600"
+                      }`}
+                    >
+                      {tag}
+                    </span>
+                  ),
+                )}
+              </div>
             </div>
           ))}
         </div>

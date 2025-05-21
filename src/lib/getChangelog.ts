@@ -6,7 +6,7 @@ export interface ChangelogItem {
   slug: string;
   title: string;
   date: string;
-  type: string;
+  type: string | string[];
   summary?: string;
   content: string;
 }
@@ -27,7 +27,7 @@ export function getAllChangelogItems(): ChangelogItem[] {
         slug: filename.replace(/\.mdx$/, ""),
         title: data.title,
         date: data.date,
-        type: data.type,
+        type: Array.isArray(data.type) ? data.type : [data.type],
         summary: data.summary,
         content,
       };
