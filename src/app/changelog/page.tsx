@@ -8,6 +8,7 @@ const tagStyles: Record<string, string> = {
   Improvement: "bg-blue-200 text-blue-800",
   Update: "bg-yellow-200 text-yellow-800",
   Launch: "bg-purple-200 text-purple-800",
+  Fix: "bg-red-200 text-red-800",
 };
 
 export default function ChangelogPage() {

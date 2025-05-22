@@ -1,0 +1,15 @@
+---
+title: "Real-Time Sidebar Update and Auto Sign-In"
+version: "1.1.1"
+date: "2025-05-22"
+type: ["Fix"]
+summary: "Fixed sidebar highlighting when the date changes and enabled automatic sign-in using stored tokens."
+---
+
+Bugs Fixed:
+
+- 🕒 Fixed an issue where the **"Today"** tab stayed highlighted even after the system date changed past midnight
+
+- ✅ Implemented **auto sign-in** for users with a valid token in cookies to bypass the login screen
+
+- 🔐 Automatically redirects authenticated users to the calendar without user interaction
