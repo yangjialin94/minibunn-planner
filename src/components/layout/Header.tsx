@@ -82,7 +82,7 @@ function Header() {
 
           {/* Sign up */}
           <MotionLink
-            href="https://app.minibunnplanner.com/auth/register"
+            href="https://app.minibunnplanner.com/"
             className="rounded-full bg-neutral-800 px-4 py-2 text-neutral-100 hover:bg-neutral-700"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

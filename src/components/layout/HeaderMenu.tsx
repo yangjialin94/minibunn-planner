@@ -101,9 +101,7 @@ function HeaderMenu() {
                 {/* Sign up */}
                 <button
                   onClick={() =>
-                    handleNavigation(
-                      "https://app.minibunnplanner.com/auth/register",
-                    )
+                    handleNavigation("https://app.minibunnplanner.com/")
                   }
                   className="rounded-full bg-neutral-800 px-4 py-2 text-center text-lg text-neutral-100 hover:bg-neutral-700"
                 >

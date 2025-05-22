@@ -36,7 +36,7 @@ function Pricing() {
             </p>
           </div>
           <MotionLink
-            href="https://app.minibunnplanner.com/auth/register"
+            href="https://app.minibunnplanner.com/"
             className="mt-auto w-full rounded-full bg-neutral-800 py-3 text-neutral-100 hover:bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -58,7 +58,7 @@ function Pricing() {
             <p className="mb-6 text-sm text-neutral-500">($1.66 / month)</p>
           </div>
           <MotionLink
-            href="https://app.minibunnplanner.com/auth/register"
+            href="https://app.minibunnplanner.com/"
             className="mt-auto w-full rounded-full bg-neutral-800 py-3 text-neutral-100 hover:bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -83,7 +83,7 @@ function Pricing() {
             </p>
           </div>
           <MotionLink
-            href="https://app.minibunnplanner.com/auth/register"
+            href="https://app.minibunnplanner.com/"
             className="mt-auto w-full rounded-full bg-neutral-800 py-3 text-neutral-100 hover:bg-neutral-900"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
