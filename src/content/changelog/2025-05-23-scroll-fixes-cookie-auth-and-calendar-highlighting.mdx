@@ -1,0 +1,21 @@
+---
+title: "Scroll Fixes, Cookie Auth, and Calendar Highlighting"
+version: "1.1.2"
+date: "2025-05-23"
+type: ["Fix", "Improvement"]
+summary: "Resolved scroll-to-top behavior for notes and tasks, added token-based auto-login, and fixed calendar highlighting for today."
+---
+
+Bugs Fixed:
+
+- Fixed scroll-to-top behavior when creating a new note to ensure the new item is visible immediately
+
+- Fixed scroll-to-top logic on the main **Notes** page for consistent navigation after interactions
+
+- Corrected a bug where **today&apos;s calendar cell** was not highlighted due to a missing date check
+
+Improvements:
+
+- Implemented **token-based auto-login** using `js-cookie` on the login page
+
+- Users with a valid token are now **automatically redirected** to the calendar without needing to log in again
