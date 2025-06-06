@@ -66,7 +66,10 @@ export default function ChangelogPage() {
                         <p className="mt-2 text-neutral-500" {...props} />
                       ),
                       li: ({ ...props }) => (
-                        <li className="ml-6 list-disc" {...props} />
+                        <li
+                          className="ml-6 list-disc text-neutral-500"
+                          {...props}
+                        />
                       ),
                       ul: ({ ...props }) => (
                         <ul className="mb-2 ml-4 list-disc" {...props} />
