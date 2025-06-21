@@ -62,12 +62,13 @@ function HeaderMenu() {
                 </div>
 
                 {/* Menu items */}
-                <button
+                {/* TODO: Update with the newest UI changes */}
+                {/* <button
                   onClick={() => handleNavigation("/guide/home/header-sidebar")}
                   className="rounded-full border border-transparent px-4 py-2 text-center text-lg text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
                 >
                   Guide
-                </button>
+                </button> */}
 
                 {/* Changelog */}
                 <button

@@ -22,35 +22,35 @@ const slides: CarouselItem[] = [
     title: "Calendar",
     description:
       "View your entire month at a glance. Each date shows ✓/total tasks so you can spot streaks, misses, and over-scheduled days instantly.",
-    imageUrl: "/screens/calendar-050125.png",
+    imageUrl: "/screens/calendar-062125.png",
   },
   {
     key: "tasks",
-    title: "Today",
+    title: "Tasks",
     description:
       "Laser-focus on the now. Filter by active or completed, see a live progress ratio, and reorder tasks with simple drag-and-drop.",
-    imageUrl: "/screens/tasks-050125.png",
+    imageUrl: "/screens/tasks-062125.png",
   },
   {
     key: "journal",
     title: "Journal",
     description:
       "Capture reflections, gratitude, and lessons learned in a clean, lined editor, perfect for daily writing without distractions.",
-    imageUrl: "/screens/journal-050125.png",
+    imageUrl: "/screens/journal-062125.png",
   },
   {
     key: "notes",
     title: "Notes",
     description:
       "Save quick ideas, reminders, and links as timestamped cards. Scroll, search, and edit them later when inspiration strikes again.",
-    imageUrl: "/screens/notes-050125.png",
+    imageUrl: "/screens/notes-062125.png",
   },
   {
     key: "user",
     title: "User",
     description:
       "Manage your account in one place—check your plan and billing, update your password, access support, or cancel your subscription anytime.",
-    imageUrl: "/screens/user-050125.png",
+    imageUrl: "/screens/user-062125.png",
   },
 ];
 

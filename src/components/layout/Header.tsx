@@ -39,14 +39,15 @@ function Header() {
         {/* Desktop */}
         <div className="hidden items-center gap-2 text-lg md:flex lg:gap-4">
           {/* Guide */}
-          <MotionLink
+          {/* TODO: Update with the newest UI changes */}
+          {/* <MotionLink
             href="/guide/home/header-sidebar"
             className="rounded-full border border-transparent px-4 py-2 text-neutral-800 hover:border-neutral-800 hover:bg-neutral-200"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             Guide
-          </MotionLink>
+          </MotionLink> */}
 
           {/* Changelog */}
           <MotionLink
