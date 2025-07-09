@@ -245,7 +245,7 @@ export default function ChangelogPage() {
                           </code>
                         ),
                         blockquote: ({ children }) => (
-                          <blockquote className="my-6 border-l-4 border-neutral-300 bg-neutral-50 px-6 py-4 text-neutral-700 italic">
+                          <blockquote className="my-6 border border-neutral-300 bg-neutral-50 px-6 py-4 text-neutral-700 italic">
                             {children}
                           </blockquote>
                         ),

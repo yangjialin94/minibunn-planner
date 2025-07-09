@@ -86,7 +86,7 @@ function Pricing() {
             <p className="mb-6 text-2xl font-bold tracking-tight sm:text-3xl">
               $0
             </p>
-            <div className="mb-6 space-y-2 text-left text-sm">
+            <div className="mb-6 space-y-2 text-center text-sm">
               <motion.div
                 className="flex items-center"
                 initial={{ opacity: 0, x: -20 }}
@@ -94,7 +94,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Task Tracking</span>
               </motion.div>
               <motion.div
@@ -104,7 +104,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <X className="mr-2 h-4 w-4 text-red-500" />
+                <X className="mr-3 h-4 w-4 text-red-500" />
                 <span className="text-neutral-400">Journal Keeping</span>
               </motion.div>
               <motion.div
@@ -114,7 +114,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <X className="mr-2 h-4 w-4 text-red-500" />
+                <X className="mr-3 h-4 w-4 text-red-500" />
                 <span className="text-neutral-400">Notes Management</span>
               </motion.div>
             </div>
@@ -162,7 +162,7 @@ function Pricing() {
             <p className="mb-6 text-2xl font-bold tracking-tight sm:text-3xl">
               $2.99
             </p>
-            <div className="mb-6 space-y-2 text-left text-sm">
+            <div className="mb-6 space-y-2 text-center text-sm">
               <motion.div
                 className="flex items-center"
                 initial={{ opacity: 0, x: -20 }}
@@ -170,7 +170,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Task Tracking</span>
               </motion.div>
               <motion.div
@@ -180,7 +180,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Journal Keeping</span>
               </motion.div>
               <motion.div
@@ -190,7 +190,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Notes Management</span>
               </motion.div>
             </div>
@@ -248,7 +248,7 @@ function Pricing() {
             >
               Save 44%
             </motion.p>
-            <div className="mb-6 space-y-2 text-left text-sm">
+            <div className="mb-6 space-y-2 text-center text-sm">
               <motion.div
                 className="flex items-center"
                 initial={{ opacity: 0, x: -20 }}
@@ -256,7 +256,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Task Tracking</span>
               </motion.div>
               <motion.div
@@ -266,7 +266,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Journal Keeping</span>
               </motion.div>
               <motion.div
@@ -276,7 +276,7 @@ function Pricing() {
                 transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <Check className="mr-2 h-4 w-4 text-green-500" />
+                <Check className="mr-3 h-4 w-4 text-green-500" />
                 <span>Notes Management</span>
               </motion.div>
             </div>
