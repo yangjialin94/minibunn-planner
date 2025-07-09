@@ -1,60 +1,106 @@
+"use client";
+
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 
+const MotionLink = motion(Link);
+
 function Footer() {
   return (
-    <footer className="mx-auto w-full pb-24 text-center text-sm text-neutral-500">
+    <motion.footer
+      className="mx-auto w-full pb-24 text-center text-sm text-neutral-500"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       {/* Logo */}
-      <div className="mx-auto mb-6 w-10">
+      <motion.div
+        className="mx-auto mb-6 w-10"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.1 }}
+      >
         <Image
           src="/minibunn-logo.png"
           alt="Minibunn logo"
           width="40"
           height="40"
         />
-      </div>
+      </motion.div>
 
       {/* Nav links */}
-      <nav className="mb-6 flex flex-wrap justify-center gap-6 font-medium">
-        {/* <Link
+      <motion.nav
+        className="mb-6 flex flex-wrap justify-center gap-6 font-medium"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        viewport={{ once: true }}
+      >
+        {/* <MotionLink
           href="/about"
           className="border-b border-transparent hover:border-neutral-500"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           About
-        </Link> */}
-        <Link
+        </MotionLink> */}
+        <MotionLink
           href="mailto:contact@minibunnplanner.com"
           className="border-b border-transparent hover:border-neutral-500"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Contact
-        </Link>
-        <Link
+        </MotionLink>
+        <MotionLink
           href="/privacy"
           className="border-b border-transparent hover:border-neutral-500"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Privacy
-        </Link>
-        <Link
+        </MotionLink>
+        <MotionLink
           href="/cookies"
           className="border-b border-transparent hover:border-neutral-500"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Cookies
-        </Link>
-        <Link
+        </MotionLink>
+        <MotionLink
           href="/terms"
           className="border-b border-transparent hover:border-neutral-500"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           Terms
-        </Link>
-        <Link href="#" className="termly-display-preferences">
+        </MotionLink>
+        <MotionLink
+          href="#"
+          className="termly-display-preferences"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           Manage Consent
-        </Link>
-      </nav>
+        </MotionLink>
+      </motion.nav>
 
       {/* Legal */}
-      <p className="mb-1">© 2025 Jialin Yang. All rights reserved.</p>
-      <p>Minibunn Planner™ by Jialin Yang.</p>
-    </footer>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <p className="mb-1">© 2025 Jialin Yang. All rights reserved.</p>
+        <p>Minibunn Planner™ by Jialin Yang.</p>
+      </motion.div>
+    </motion.footer>
   );
 }
 

@@ -7,11 +7,15 @@ import React from "react";
 
 import HeaderMenu from "./HeaderMenu";
 
-const MotionLink = motion.create(Link);
+const MotionLink = motion(Link);
 
 function Header() {
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* left side */}
       <div className="flex items-center">
         {/* Logo */}
@@ -35,9 +39,18 @@ function Header() {
       </div>
 
       {/* right side */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         {/* Desktop */}
-        <div className="hidden items-center gap-2 text-lg md:flex lg:gap-4">
+        <motion.div
+          className="hidden items-center gap-2 text-lg md:flex lg:gap-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           {/* Guide */}
           {/* TODO: Update with the newest UI changes */}
           {/* <MotionLink
@@ -88,16 +101,21 @@ function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Get started
+            Start Free
           </MotionLink>
-        </div>
+        </motion.div>
 
         {/* Mobile */}
-        <div className="flex md:hidden">
+        <motion.div
+          className="flex md:hidden"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+        >
           <HeaderMenu />
-        </div>
-      </div>
-    </header>
+        </motion.div>
+      </motion.div>
+    </motion.header>
   );
 }
 
