@@ -1,0 +1,17 @@
+---
+title: "User Data Persistence Across Browser Tabs"
+version: "1.3.5"
+date: "2025-07-11"
+type: ["Fix"]
+summary: "Fixed user data persistence to ensure seamless synchronization across all browser tabs and windows."
+---
+
+Bugs Fixed:
+
+- **Fixed Subscription Status Recognition Across Browser Tabs:** We've resolved an issue where subscribed users would see the pricing plan page when opening subscribed feature pages in new tabs, even though they were already logged in and had access to premium features in other tabs. This fix ensures that:
+  - Subscription status is properly synchronized across all browser tabs
+  - Users can access subscribed features immediately in any new tab without being redirected to pricing
+  - Authentication and subscription state persist correctly when navigating between tabs
+  - Premium feature access is consistently recognized regardless of which tab was opened first
+
+This improvement eliminates the confusion of being shown pricing plans when users already have active subscriptions, providing a seamless experience across all browser tabs.
