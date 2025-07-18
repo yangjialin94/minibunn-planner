@@ -1,0 +1,35 @@
+---
+title: "Backend Table Restructuring and Frontend Enhancements"
+version: "1.3.6"
+date: "2025-07-18"
+type: ["Feature", "Fix", "Improvement"]
+summary: "Major backend table restructuring, UI terminology updates, pricing page fix for subscribed users, and enhanced task tracking features."
+---
+
+Backend Changes:
+
+- **Table Restructuring:** Renamed "Note" table to "Backlog" table to better reflect its purpose for storing task backlogs and ideas.
+
+- **Enhanced Note Management:** Renamed "Journal" table to "Note" table, streamlining the note-taking functionality.
+
+- **Simplified Note Schema:** Removed the "subject" attribute from **the** Note table, simplifying the data structure for better user experience.
+
+Frontend Changes:
+
+- **UI Terminology Updates:** Updated all frontend references from "Note" to "Backlog" to align with the new backend structure.
+
+- **Streamlined Note Interface:** Changed "Journal" references to "Note" throughout the UI for consistency with the backend changes.
+
+- **Simplified Note Creation:** Removed the "subject" field from the note creation interface, making note-taking more straightforward.
+
+- **Cross-Tab State Persistence:** Implemented user state persistence across all browser tabs, ensuring seamless synchronization of user data and subscription status regardless of which tab is being used.
+
+Bugs Fixed:
+
+- **Pricing Page Access Issue:** Fixed the issue where subscribed users were incorrectly shown the pricing page when accessing premium features, ensuring proper subscription status recognition across all tabs.
+
+New Features:
+
+- **Enhanced Task Progress Tracking:** Added a new progress bar for task tracking, providing visual feedback on task completion status.
+
+- **Rich Text Formatting:** Added strikethrough functionality to the text editor, giving users more formatting options for their notes and tasks.

@@ -17,36 +17,36 @@ const features: FeatureItem[] = [
     key: "calendar",
     title: "Calendar",
     description:
-      "View your entire month at a glance. Each date shows ✓/total tasks so you can spot streaks, misses, and over-scheduled days instantly.",
-    imageUrl: "/screens/calendar-062125.png",
+      "View your entire month at a glance. Each date shows a color-coded progress bar, helping you quickly see streaks and missed days.",
+    imageUrl: "/screens/calendar-071825.png",
   },
   {
-    key: "tasks",
-    title: "Tasks",
+    key: "task",
+    title: "Task",
     description:
-      "Laser-focus on the now. Filter by active or completed, see a live progress ratio, and reorder tasks with simple drag-and-drop.",
-    imageUrl: "/screens/tasks-062125.png",
+      "Laser-focus on the now. Show or hide completed tasks, see a live progress bar with ratio, and reorder tasks with simple drag-and-drop.",
+    imageUrl: "/screens/task-071825.png",
   },
   {
-    key: "journal",
-    title: "Journal",
+    key: "note",
+    title: "Note",
     description:
-      "Capture reflections, gratitude, and lessons learned in a clean, lined editor, perfect for daily writing without distractions.",
-    imageUrl: "/screens/journal-062125.png",
+      "Capture your day in a clean, lined editor. It's perfect for writing notes, thoughts, and anything worth remembering.",
+    imageUrl: "/screens/note-071825.png",
   },
   {
-    key: "notes",
-    title: "Notes",
+    key: "backlog",
+    title: "Backlog",
     description:
       "Save quick ideas, reminders, and links as timestamped cards. Scroll, search, and edit them later when inspiration strikes again.",
-    imageUrl: "/screens/notes-062125.png",
+    imageUrl: "/screens/backlog-071825.png",
   },
   {
     key: "user",
     title: "User",
     description:
-      "Manage your account in one place—check your plan and billing, update your password, access support, or cancel your subscription anytime.",
-    imageUrl: "/screens/user-062125.png",
+      "Manage your account in one place. Check your plan and billing, update your password, access support, or cancel your subscription anytime.",
+    imageUrl: "/screens/user-071825.png",
   },
 ];
 
@@ -217,7 +217,7 @@ function Features() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-8"
             onClick={closeLightbox}
           >
             {/* Close button */}
@@ -236,41 +236,41 @@ function Features() {
 
             {/* Image container */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8, y: 50 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.8, y: 50 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
               transition={{
                 duration: 0.3,
                 type: "spring",
                 stiffness: 300,
                 damping: 30,
               }}
-              className="relative max-h-[90vh] w-full max-w-7xl"
+              className="relative flex h-full w-full max-w-6xl items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <div className="relative max-h-[85vh] max-w-full overflow-hidden rounded-2xl shadow-2xl">
                 <Image
                   src={lightboxImage.imageUrl}
                   alt={`${lightboxImage.title} screenshot - full size`}
                   width={1600}
                   height={1200}
-                  className="h-auto w-full object-contain"
+                  className="h-auto max-h-[85vh] w-auto max-w-full rounded-2xl object-contain"
                   priority
                 />
-              </div>
 
-              {/* Image info */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 }}
-                className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white"
-              >
-                <h3 className="mb-2 text-2xl font-bold">
-                  {lightboxImage.title}
-                </h3>
-                <p className="text-white/90">{lightboxImage.description}</p>
-              </motion.div>
+                {/* Image info */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 }}
+                  className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white"
+                >
+                  <h3 className="mb-2 text-2xl font-bold">
+                    {lightboxImage.title}
+                  </h3>
+                  <p className="text-white/90">{lightboxImage.description}</p>
+                </motion.div>
+              </div>
             </motion.div>
           </motion.div>
         )}

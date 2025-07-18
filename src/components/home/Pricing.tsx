@@ -105,7 +105,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <X className="mr-3 h-4 w-4 text-red-500" />
-                <span className="text-neutral-400">Journal Keeping</span>
+                <span className="text-neutral-400">Note Keeping</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -115,7 +115,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <X className="mr-3 h-4 w-4 text-red-500" />
-                <span className="text-neutral-400">Notes Management</span>
+                <span className="text-neutral-400">Backlog Management</span>
               </motion.div>
             </div>
           </div>
@@ -181,7 +181,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <Check className="mr-3 h-4 w-4 text-green-500" />
-                <span>Journal Keeping</span>
+                <span>Note Keeping</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -191,7 +191,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <Check className="mr-3 h-4 w-4 text-green-500" />
-                <span>Notes Management</span>
+                <span>Backlog Management</span>
               </motion.div>
             </div>
           </div>
@@ -267,7 +267,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <Check className="mr-3 h-4 w-4 text-green-500" />
-                <span>Journal Keeping</span>
+                <span>Note Keeping</span>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -277,7 +277,7 @@ function Pricing() {
                 viewport={{ once: true }}
               >
                 <Check className="mr-3 h-4 w-4 text-green-500" />
-                <span>Notes Management</span>
+                <span>Backlog Management</span>
               </motion.div>
             </div>
           </div>
