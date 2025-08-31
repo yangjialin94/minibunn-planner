@@ -49,7 +49,7 @@ function Footer() {
           About
         </MotionLink> */}
         <MotionLink
-          href="mailto:contact@minibunnplanner.com"
+          href="mailto:work@jialinyang.com"
           className="border-b border-transparent hover:border-neutral-500"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

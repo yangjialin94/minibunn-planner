@@ -52,10 +52,10 @@ export function LegalPageLayout({
           <p className="text-slate-600">
             Questions? Contact us at{" "}
             <a
-              href="mailto:contact@minibunnplanner.com"
+              href="mailto:work@jialinyang.com"
               className="font-medium text-blue-600 hover:text-blue-700"
             >
-              contact@minibunnplanner.com
+              work@jialinyang.com
             </a>
           </p>
         </div>

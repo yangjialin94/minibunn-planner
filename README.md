@@ -51,7 +51,7 @@ Include screenshots of the marketing site pages:
 
 If you have any advice, comments, or questions about Minibunn Planner Marketing Site, feel free to reach out:
 
-- **Email**: <contact@minibunnplanner.com>
+- **Email**: <work@jialinyang.com>
 - **LinkedIn**: <https://www.linkedin.com/company/minibunn-planner>
 - **X**: <https://x.com/minibunnplanner>
 

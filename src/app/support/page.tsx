@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import React from "react";
 
 const MotionLink = motion(Link);
 
@@ -76,7 +75,7 @@ function SupportPage() {
         {supportItems.map((item, index) => (
           <MotionLink
             key={index}
-            href={`mailto:contact@minibunnplanner.com?subject=${encodeURIComponent(item.subject)}`}
+            href={`mailto:work@jialinyang.com?subject=${encodeURIComponent(item.subject)}`}
             className="block rounded-xl border-6 border-neutral-100 bg-white p-4 transition hover:border-neutral-200 hover:bg-neutral-200"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
